@@ -1,0 +1,45 @@
+                            ** Selection Sort **
+
+Selection sort also, at the end of each iteration, pushes the next highest number to the end.
+However, this time, it was done with fewer swaps.
+You just picked the highest number in each iteration and swapped it with the last, unsorted number.
+So, each iteration in the worst case needs only one swap.
+This is unlike Bubble sort where you have to compare and swap every two numbers every time they are out of order.
+
+
+
+                            ** Array Sorting Using Selection Sort **
+
+Now, We understand how the Selection Sort works. Now, let's see its practical implementation by sorting the given array.
+Let's assume you are having an array of 5 elements
+[54,15,25,-40,4]
+
+Code Snippet of Selection Sort
+
+for (int i = 0; i < n-1; i++)
+{
+    int min = i;
+    for (int j = i+1; j < n; j++)
+        if (arr[j] < arr[min])
+            min = j;
+
+    int temp = arr[min];
+    arr[min] = arr[i];
+    arr[i] = temp;
+}
+
+Now, let's see what happens to our array when it went through the Selection Sort Algorithm
+
+After first pass:
+[-40 15 25 54 4]
+
+After second pass:
+[-40 4 25 54 15]
+
+After third pass:
+[-40 4 15 54 25]
+
+After fourth pass:
+[-40 4 15 25 54]
+
+So, you can see our unsorted array [54,15,25,-40,4]  becomes sorted array [-40,4,15,25,54] after going through the Selection Sort Algorithm.

@@ -1,0 +1,7 @@
+For binary search, you need a sorted array.
+You start at the middle index and compare the element that you are searching for with the element at the middle index.
+If the element at this index does not match the element that you are searching for,
+then you check whether it is greater or lesser than the element at the index.
+If it is greater than the element at the middle index, then you discard everything to the left and move to the right.
+Then you find the middle of this array, which is to the right,
+compare the required element with its middle and continue doing this until you find the required element.

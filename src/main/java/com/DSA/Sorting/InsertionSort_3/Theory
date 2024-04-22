@@ -1,0 +1,43 @@
+                            ** Insertion Sort **
+
+In Insertion sort, you compare an element with the element to its left.
+If the element to its left is greater, then you should shift the greater element to the right by one position and the smaller one to the left.
+In the next iteration, you need to compare this smaller element with the one to its left, and shift it if the element to the left is greater.
+You stop when you find that the element to the left is smaller than the element with which you are comparing it.
+
+
+                            ** Array Sorting Using Insertion Sort **
+
+Now, We understand how the Insertion Sort works. Now, let's see its practical implementation by sorting the given array.
+
+Let's assume you are having an array of 5 elements
+[87,-74,0,5,55]
+
+Code Snippet of Insertion Sort
+for( int i =1 ;i<arr.length;i++){
+    int v = arr[i];
+    int  j = i;
+
+    while(j>=1 && arr[j-1]>v){
+        arr[j]=arr[j-1];
+        j--;
+    }
+
+    arr[j]=v;
+}
+
+Now, let's see what happens to our array when it went through the Insertion Sort Algorithm
+
+After first pass :
+[-74 87 0 5 55]
+
+After second pass :
+[-74 0 87 5 55 ]
+
+After third pass :
+[-74 0 5 87 55]
+
+After fourth pass :
+[-74 0 5 55 87]
+
+So, you can see our unsorted array [87,-74,0,5,55] becomes sorted array [-74,0,5,55,87] after going through the Insertion Sort Algorithm.

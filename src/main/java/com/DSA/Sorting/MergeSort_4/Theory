@@ -1,0 +1,5 @@
+                            ** Merge Sort **
+
+How Merge Sort utilises ‘divide and conquer’ to sort an array.
+We keep dividing an array into two halves until we reach the single elements.
+Once we reach this stage, we start to merge them back in the required order.
